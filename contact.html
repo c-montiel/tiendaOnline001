@@ -11,45 +11,65 @@
 <body>
     
     <header>
-        <section>
-            
-                <h1>
-                    Todas las Hojas son del Viento
-                </h1>
-                <h2>
-                    "Libros para volar..."
-                </h2>
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                    <li><a href="store.html">Productos</a></li>
-                </ul>
-            </nav>
-        </section>
-    </header>
+        
+        <span class="logo">
+            logo
+        </span>
+    
+
+    <section>
+        <h1 class="marca">
+                Todas las Hojas son del Viento
+        </h1>
+    </section>
+        
+    <section>
+        <nav>
+            <span class="material-symbols-outlined">
+                menu
+            </span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="store.html">Productos</a></li>
+            </ul>
+        </nav>
+    </section>
+
+</header>
 
     <main>
         <h2>
             Contacto
         </h2>
         <form action="https://formspree.io/f/xwpkbwja" method="post" id="contact-form">
-            <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" required>
-            <label for="email">email</label>
-            <input type="email" name="email" id="email" placeholder="aqui@su.email" required>
-            <label for="mesagge">Su mensaje</label>
-            <textarea name="mesagge" id="mesagge" rows="4" cols="40" placeholder="Escriba aqui su mensaje por favor" required></textarea>
-            <button type="submit" id="submit">Enviar</button>
+            <fieldset>
+                <legend>Correo de Consultas</legend>
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su Nombre" required>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" placeholder="aqui@su.email" required>
+                <label for="mesagge">Su mensaje</label>
+                <textarea name="mesagge" id="mesagge" rows="4" cols="40" placeholder="Escriba aqui su mensaje por favor" required></textarea>
+                <button type="submit" id="submit">Enviar</button>
+            </fieldset>
+
         </form>
 
     </main>
 
     <footer>
+        <section class="contact-us">
+            <h3>Contacto</h3>
+            <p>Email: info@todaslashojas.com</p>
+            <p>Teléfono: (11) 1234-5678</p>
+            <p>whapsapp: (11) 2345-6789</p>
+        </section>
+
+
         <section>
-            <p> Todas las hojas son del viento &copy;2024 </p> 
-            <p>by cmonty</p>
+            <p id="copy"> Todas las hojas son del viento &copy;2024 </p> 
+            <p id="autor">by &copy;monty</p>
         </section>
     </footer>
 
